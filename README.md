@@ -1,13 +1,4 @@
-# IDMX 225 Midterm
+# DINO Ice Cream
 
-Put your CSS in:
+![A dinosaur eating Ice Cream.](./img/dino_logo.png "DINO")
 
-> css/style.css
-
-Put your images in:
-
-> img
-
-Put your code in:
-
-> index.html
