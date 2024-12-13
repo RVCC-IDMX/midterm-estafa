@@ -7,9 +7,10 @@
 body {
     margin: 0;
     background: #D7F9FF;
+    overscroll-behavior: none;
 }
 
-p, h1, h2, h3, h4, h5, h6 {
+p, h1, h2, h3, h4, h5, h6, footer {
     font-size: 100px; 
     font-family: "Oswald", sans-serif;
     font-optical-sizing: auto;
@@ -20,7 +21,6 @@ p, h1, h2, h3, h4, h5, h6 {
     color: #F9FBF2;
     text-shadow: 0px 0px 13px #00000030;
 }
-
 
 /* Header & Hero */
 #header {
@@ -415,9 +415,7 @@ p, h1, h2, h3, h4, h5, h6 {
     flex-direction: column;
     margin-left: auto;
     margin-right: auto;
-    padding-left: 1rem;
-    padding-top: 130px;
-    padding-right: 1rem;
+    padding: 130px 1rem 130px 1rem;
     max-width: 90rem;
     min-width: 100px;
     row-gap: 50px;
@@ -479,10 +477,11 @@ p, h1, h2, h3, h4, h5, h6 {
     display: flex;
     padding-left: 52px;
     padding-right: 40px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 3px;
+    padding-bottom: 15px;
     flex-direction: row;
-    /* line-height: 6px; */
+    width: 280px;
+    fill: yellow;
 }
 
 .content {
@@ -520,6 +519,15 @@ p, h1, h2, h3, h4, h5, h6 {
 
 /* Footer */
 
+footer {
+    font-size: 25px;
+    letter-spacing: 0px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background: #0D1C36;
+    color: #FFEDE1;
+    text-align: center;
+}
 
 /* Media state for Desktop site */
 @media (max-width: 1px) {
@@ -653,6 +661,17 @@ p, h1, h2, h3, h4, h5, h6 {
         padding-top: 100px;
         padding-bottom: 100px;
     }
+    .title {
+        display: none;
+
+    }
+    .name p {
+        font-size: 35px;
+    }
+    .review {
+        min-width: 455px;
+        max-width: 600px;
+    }
 
 }
 
@@ -667,10 +686,6 @@ p, h1, h2, h3, h4, h5, h6 {
         padding: 35px 10px 35px 10px;
         border: 3px solid #3b568799;
     }
-    .name p {
-        font-size: 52px;
-        font-weight: 500;
-    }
     .title p {
         font-size: 45px;
         font-weight: 400;
@@ -679,19 +694,19 @@ p, h1, h2, h3, h4, h5, h6 {
         padding-left: 10.5px;
         padding-right: 10.5px;
         padding-top: 0;
-        /* border: 2px solid #3b578c24; */
-        /* background: linear-gradient(179deg, #3e4043, #6a8fc6); */
         border-radius: 11px;
         box-shadow: 0px 0px 11px 2px #384e7636;
+        background-color: #5378BC;
     }
     .name p {
         line-height: 1.85;
+        font-weight: 500;
 
     }
     .inside {
-        row-gap: 82px;
+        row-gap: 145px;
         padding-top: 70px;
-        padding-bottom: 100px
+        padding-bottom: 30px; 
     }
 
 }
@@ -719,5 +734,4 @@ p, h1, h2, h3, h4, h5, h6 {
     }
     
 }
-
 
